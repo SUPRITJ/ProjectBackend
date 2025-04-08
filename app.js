@@ -15,8 +15,7 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 
-mongoose
-  .connect('mongodb://127.0.0.1:27017/myEcomDB')
+mongoose.connect('mongodb+srv://supritjamdar:yb3FlaCF8HbOQWpO@cluster0.k8mgvay.mongodb.net/?retryWrites=true&w=majority&')
   .then(() => {
     console.log("Database is connected");
   })
